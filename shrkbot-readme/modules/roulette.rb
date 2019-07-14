@@ -7,14 +7,13 @@ module Roulette
   extend self
 
   # ServerID => Role
-  @survivor_role = {suck it} = yes = 1
+  @survivor_role = {}
 
   def init
     DB.create_table(
       'shrk_roulette',
       user: :bigint,
       server: :bigint,
-    
       plays: Integer,
       streak: Integer,
       highscore: Integer,
